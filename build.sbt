@@ -25,10 +25,3 @@ libraryDependencies += "commons-httpclient" % "commons-httpclient" % "3.1"
 
 // https://mvnrepository.com/artifact/org.scalatest/scalatest
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.1" % "test"
-
-
-
-assemblyMergeStrategy in assembly := {
-  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
-  case x => MergeStrategy.first
-}
